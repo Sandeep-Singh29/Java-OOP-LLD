@@ -1,0 +1,16 @@
+-> Overview of OOPS
+
+-> Objects and Classes
+
+-> Pillar of OOPS
+    1. Data Abstraction
+    2. Encapsulation
+    3. Inheritance
+       - Types of Inheritance : Single , Multiple etc.
+    4. Polymorphism
+       - Static Polymorphism
+       - Dynamic Polymorphism
+
+-> Relationship
+    - Is-a Relationship
+    - Has-a Relationship

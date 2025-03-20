@@ -1,0 +1,7 @@
+FINAL KEYWORD :
+
+The final keyword in Java is used to restrict modification of variables, methods, and classes. It can be applied to:
+
+- Variables → Prevents reassignment (constant values).
+- Methods → Prevents overriding in subclasses.
+- Classes → Prevents inheritance.

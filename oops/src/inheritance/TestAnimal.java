@@ -12,6 +12,5 @@ public class TestAnimal {
         Animal animal1 = new Dog();
         animal1.sound();
 
-
     }
 }

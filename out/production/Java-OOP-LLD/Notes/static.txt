@@ -1,0 +1,56 @@
+static :
+
+- static ek keyword hai jo kisi class ke member (variable, method, block, ya nested class) ko class-level ka bana deta hai.
+- static (variable, method, block, ya nested class) direct class sa belong karata hai na ki Object sa.
+- static member ko direct bina object create kiye bhi access kiya ja sakta hai -- class ka Name sa.
+
+
+
+1️⃣ static VARIABLE (Class VARIABLE)
+
+👉 Jab kisi variable ko static banate hain, to wo class-level ka ban jata hai,
+aur sabhi objects usi ek variable ko share karte hain.
+
+👉 Example:
+class Counter {
+    static int count = 0; // Static variable, shared among all objects
+
+    Counter() {
+        count++;
+        System.out.println("Count: " + count);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Counter c1 = new Counter(); // Count: 1
+        Counter c2 = new Counter(); // Count: 2
+        Counter c3 = new Counter(); // Count: 3
+    }
+}
+
+Important :
+✅ Without static, har object ke liye count alag-alag hota. Lekin static hone ki wajah se
+sabhi objects same count variable ko share kar rahe hain.
+
+
+
+
+2️⃣ static METHOD
+
+👉 Jab kisi method ko static banate hain, to usse bina object create kiye class ke naam se access kar sakte hain.
+
+👉 Example:
+class MathUtils {
+
+    static int square(int n) {
+        return n * n;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        int result = MathUtils.square(5); // Direct class name se call
+        System.out.println("Square: " + result);
+    }
+}
