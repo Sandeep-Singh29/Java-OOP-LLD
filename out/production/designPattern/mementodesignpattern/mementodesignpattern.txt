@@ -1,0 +1,21 @@
+MEMENTO DESIGN PATTERN :
+
+WHEN WE REQUIRED AND USE :
+- Provides an ability to revert an Object to a Previous state i.e.(in other word) UNDO capability
+- It does not expose the Object internal Implementation.
+
+-- It is basically stored the Previous History of Object.
+-- It is also a Snapshot Design Pattern.
+
+
+## MEMENTO DESIGN PATTERN has 3 Major Component :
+
+1. Originator :
+- It represent the Object, for which state need to be saved and restored.
+- Expose method to SAVE and RESTORE its state using Memento Object.
+
+2. Memento :
+- It represent an Objects which hold the state of Originator.
+
+3. CareTaker :
+- Manages the list of State(in other word LIST OF Memento).

@@ -155,3 +155,16 @@ public class VehicleTest {
     }
 }
 ✅ Kab Use Karen? Jab hierarchy ho aur multiple behaviors implement karne ho.
+
+
+
+------------------------  ✅ DIFFERENCE B/W ABSTRACTION & INTERFACE ✅ --------------------------
+
+
+3. Difference Between Abstract Class & Interface
+Feature 	              Abstract Class  	                    Interface
+Methods	                  Abstract + Concrete             	    Only Abstract (Java 8 se Default + Static allowed)
+Multiple Inheritance	  Single Inheritance	                Multiple Inheritance Allowed
+Fields (Variables)	      Instance variables allowed	        Only public static final constants
+Constructor	              Possible                          	Not Allowed
+Use Case	              Jab common code share karna ho	    Jab different implementations deni ho
