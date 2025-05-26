@@ -1,6 +1,5 @@
 package immutableClass;
 
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,11 +12,12 @@ final class ImmutablePerson {
 
     private final int id;
     private final String name;
-    private final Map<String,String> testMap;
+    private final Map<String, String> testMap;
 
     public ImmutablePerson(int id, String name, Map<String, String> testMap) {
         this.id = id;
         this.name = name;
+//        this.testMap = testMap; this line modify a map bcz we direct give modify access to user
 //        this.testMap = Collections.unmodifiableMap(new HashMap<>(testMap)); way 1
         this.testMap = Map.copyOf(testMap);
     }
