@@ -18,9 +18,8 @@ final class ImmutablePerson {
     public ImmutablePerson(int id, String name, Map<String, String> testMap) {
         this.id = id;
         this.name = name;
-        this.testMap = testMap == null
-                ? Collections.emptyMap()
-                : new HashMap<>(testMap);
+//        this.testMap = Collections.unmodifiableMap(new HashMap<>(testMap)); way 1
+        this.testMap = Map.copyOf(testMap);
     }
 
     public int getId() {
@@ -32,7 +31,7 @@ final class ImmutablePerson {
     }
 
     public Map<String, String> getTestMap() {
-        return Collections.unmodifiableMap(testMap);
+        return new HashMap<>(testMap); // Defensive copy
     }
 
     @Override

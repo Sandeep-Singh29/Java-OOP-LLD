@@ -2,7 +2,7 @@ Factory Design Pattern :
 
 When we Used :
 
-Jab Mera Pas Multiple Input ho aur ki basis par mujhe kuch create karna ho
+Jab Mera Pas Multiple Input ho aur kisi basis par mujhe kuch create karna ho
 Jiski Implementation milagi use main return kar duga.
 
 
