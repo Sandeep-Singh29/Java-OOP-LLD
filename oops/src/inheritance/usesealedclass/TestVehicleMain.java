@@ -1,5 +1,7 @@
 package inheritance.usesealedclass;
 
+import abstraction.Bike;
+
 /**
  * Author: Sandeep Singh
  * Date: 04/02/25

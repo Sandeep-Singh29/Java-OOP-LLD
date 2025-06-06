@@ -17,8 +17,8 @@ final class MyImmutable {
     public MyImmutable(String name, String address, List<Object> carName) {
         this.name = name;
         this.address = address;
-        //this.carName = new ArrayList<>(carName); // In this time we have Change in List Object
-        this.carName = carName;
+        this.carName = new ArrayList<>(carName); // In this time we have Change in List Object
+//        this.carName = carName;
     }
 
     public String getName() {

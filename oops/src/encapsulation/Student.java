@@ -12,12 +12,48 @@ public class Student {
     private double salary;
     private String address;
 
-    public void setStudent(String n, int a, double s, String aa) {
-        name = n;
-        age = a;
-        salary = s;
-        address = aa;
+    public Student() {
     }
+
+    public Student(String name, int age, double salary, String address) {
+        this.name = name;
+        this.age = age;
+        this.salary = salary;
+        this.address = address;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
 
     public void showStudent() {
         System.out.println("Name : " + name);

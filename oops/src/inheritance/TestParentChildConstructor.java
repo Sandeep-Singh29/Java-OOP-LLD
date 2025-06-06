@@ -8,7 +8,6 @@ package inheritance;
 public class TestParentChildConstructor {
     public static void main(String[] args) {
         Child child = new Child();
-
     }
 }
 
@@ -24,3 +23,11 @@ class Child extends Parent {
     }
 }
 
+/*
+
+Child() constructor call →
+        → Implicit super() call →
+        → Parent() constructor runs → prints: Parent Constructor Called
+    → Back to Child() → prints: Child Constructor Called*
+
+ */
